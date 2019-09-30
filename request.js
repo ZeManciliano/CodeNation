@@ -12,6 +12,7 @@ async function main() {
   console.log(dados)
 }
 
+
 main();
 
 fetch('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=98c352ac18b1d800cedb01f8c1a5ad218e5b59d3', {
