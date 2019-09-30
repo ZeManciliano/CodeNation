@@ -1,0 +1,24 @@
+{
+  "name": "codenation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "answer.js",
+  "dependencies": {
+    "form-data": "^2.5.1",
+    "js-sha1": "^0.6.0",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcelReis/CodeNation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcelReis/CodeNation/issues"
+  },
+  "homepage": "https://github.com/MarcelReis/CodeNation#readme"
+}
