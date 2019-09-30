@@ -2,13 +2,17 @@ const fetch = require('node-fetch');
 const sha1 = require('js-sha1');
 const path = require('path');
 
-
-
-fetch('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=98c352ac18b1d800cedb01f8c1a5ad218e5b59d3')
+async function main() {
+  let dados
+  await fetch('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=98c352ac18b1d800cedb01f8c1a5ad218e5b59d3')
   .then(response => response.json())
   .then(data => {
-    console.log(data)
+    dados = data
   })
+  console.log(dados)
+}
+
+main();
 
 fetch('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=98c352ac18b1d800cedb01f8c1a5ad218e5b59d3', {
   method: 'post',
@@ -20,12 +24,5 @@ fetch('https://api.codenation.dev/v1/challenge/dev-ps/generate-data?token=98c352
   "decifrado": "",
   "resumo_criptografico": "sha1('faf16842f9510b9db510b9dcf3694286f2b0d053')" },
 })
-promise.then(res => res.json())
-promise.then(json => console.log(json));
-
-
-
-
-  
-  
-
+.then(res => res.json())
+.then(json => console.log(json));
